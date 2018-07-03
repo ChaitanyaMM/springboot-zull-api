@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: zipkin-api
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Eyedentify
+Implementation-Vendor-Id: com.eyedentify
+Build-Jdk: 1.8.0_172
+Implementation-URL: http://projects.spring.io/spring-boot/zipkin-api/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

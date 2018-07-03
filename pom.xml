@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.eyedentify</groupId>
+  <artifactId>eye-master</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>eye-master</name>
+  <description>list of apis</description>
+  <modules>
+  	<module>gateway-api</module>
+  	<module>webservices-api</module>
+  	<module>eurekaserver-api</module>
+  	<module>kafka-api</module>
+  	<module>spark-api</module>
+  	<module>zipkin-api</module>
+  </modules>
+</project>
