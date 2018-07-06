@@ -13,5 +13,6 @@
   	<module>kafka-api</module>
   	<module>spark-api</module>
   	<module>zipkin-api</module>
+  	<module>product-api</module>
   </modules>
 </project>

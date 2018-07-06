@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "eureka.client.healthcheck",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.client.healthcheck'"
+  },
+  {
+    "name": "spring.boot.admin.context-path",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.boot.admin.context-path'"
+  },
+  {
+    "name": "eureka.instance.client.registerWithEureka",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.instance.client.registerWithEureka'"
+  },
+  {
+    "name": "eureka.instance.client.fetchRegistry",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.instance.client.fetchRegistry'"
+  },
+  {
+    "name": "eureka.instance.client.serviceUrl.defaultZone",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.instance.client.serviceUrl.defaultZone'"
+  },
+  {
+    "name": "eureka.instance.client.fetchRegistry",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.instance.client.fetchRegistry'"
+  },
+  {
+    "name": "eureka.instance.client.registerWithEureka",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.instance.client.registerWithEureka'"
+  }
+]}

@@ -5,9 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Controller
 @RequestMapping(value = "/sample")
-
+//@Slf4j
 public class SampleController {
 
 	
@@ -15,8 +17,9 @@ public class SampleController {
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	@ResponseBody
 	public String sample() {
+		System.out.println("Sample is calling <><>s");
 
-		return "Sample in SWIMS is Up boy!!!!!";
+		return "Sample in webservices-api is up!!!!!";
 
 	}
 

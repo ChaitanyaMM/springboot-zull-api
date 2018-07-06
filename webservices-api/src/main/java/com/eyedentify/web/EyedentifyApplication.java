@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
@@ -14,7 +15,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 
 @SpringBootApplication
-@EnableDiscoveryClient
+/*@EnableDiscoveryClient*/
+@EnableEurekaClient
 @EnableFeignClients
 @Controller
 @ComponentScan(basePackages = "com")
@@ -29,7 +31,7 @@ public class EyedentifyApplication {
 	@RequestMapping(value="/")
 	@ResponseBody
     public String home() {
-        return "Hello API!!...";
+        return "Hello Web-API!!...";
     }
 
 }

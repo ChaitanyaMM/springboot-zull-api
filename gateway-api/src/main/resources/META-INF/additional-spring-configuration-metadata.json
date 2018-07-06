@@ -1,0 +1,52 @@
+{"properties": [
+  {
+    "name": "zuul.prefix",
+    "type": "java.lang.String",
+    "description": "A description for 'zuul.prefix'"
+  },
+  {
+    "name": "ribbon.eureka.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'ribbon.eureka.enabled'"
+  },
+  {
+    "name": "zuul.routes.webservices-api.path",
+    "type": "java.lang.String",
+    "description": "A description for 'zuul.routes.webservices-api.path'"
+  },
+  {
+    "name": "zuul.routes.webservices-api.service-id",
+    "type": "java.lang.String",
+    "description": "A description for 'zuul.routes.webservices-api.service-id'"
+  },
+  {
+    "name": "zuul.routes.product-api.path",
+    "type": "java.lang.String",
+    "description": "A description for 'zuul.routes.product-api.path'"
+  },
+  {
+    "name": "zuul.routes.product-api.service-id",
+    "type": "java.lang.String",
+    "description": "A description for 'zuul.routes.product-api.service-id'"
+  },
+  {
+    "name": "endpoints.restart.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'endpoints.restart.enabled'"
+  },
+  {
+    "name": "zuul.host.connect-timeout-millis",
+    "type": "java.lang.String",
+    "description": "A description for 'zuul.host.connect-timeout-millis'"
+  },
+  {
+    "name": "zuul.ignored-services",
+    "type": "java.lang.String",
+    "description": "A description for 'zuul.ignored-services'"
+  },
+  {
+    "name": "zuul.host.socket-timeout-millis",
+    "type": "java.lang.String",
+    "description": "A description for 'zuul.host.socket-timeout-millis'"
+  }
+]}

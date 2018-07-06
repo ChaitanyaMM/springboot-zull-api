@@ -1,2 +1,7 @@
+spring:  
+  application:
+    name: zipkin-api
+
 server:  
   port: ${PORT:9411}
+  

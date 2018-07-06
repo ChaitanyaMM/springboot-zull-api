@@ -8,14 +8,21 @@ endpoints:
 #    enabled: true
 #  health:
 #    sensitive: false
+  
 
 zuul:
+  host:
+    connect-timeout-millis: 15000
+    socket-timeout-millis: 600000
+  ignoredServices: '*'
   prefix: /api
   routes:
-  
     webservices-api: 
       path: /web/**
-      serviceId: webservices-api        
+      serviceId: webservices-api
+    product-api:
+      path: /prod/**   
+      serviceId: product-api        
 
 ribbon:
   eureka:
@@ -34,3 +41,5 @@ logging:
   level:
     ROOT: INFO
     org.springframework.web: DEBUG
+
+
