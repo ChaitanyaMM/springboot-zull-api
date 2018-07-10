@@ -11,6 +11,10 @@ eureka:
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
           
-ribbon:
-  eureka:
+    ribbon:
+      eureka:
     enabled: true
+    
+ 
+ 
+ 
