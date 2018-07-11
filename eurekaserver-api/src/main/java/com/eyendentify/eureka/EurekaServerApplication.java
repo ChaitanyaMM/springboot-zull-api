@@ -10,17 +10,15 @@ import org.springframework.context.annotation.Configuration;
 
 import de.codecentric.boot.admin.server.config.EnableAdminServer;
 
-
-
 @SpringBootApplication
-//@EnableDiscoveryClient
+// @EnableDiscoveryClient
 @EnableAdminServer
 @EnableEurekaServer
 @EnableEurekaClient
-//@EnableAutoConfiguration
-//@Configuration
+// @EnableAutoConfiguration
+// @Configuration
 public class EurekaServerApplication {
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(EurekaServerApplication.class, args);
 	}

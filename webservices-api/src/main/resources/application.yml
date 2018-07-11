@@ -11,9 +11,16 @@ eureka:
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
           
-    ribbon:
-      eureka:
+ribbon:
+  eureka:
     enabled: true
+    
+management:
+  endpoints:
+    web.exposure.include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
     
  
  

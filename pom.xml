@@ -14,5 +14,6 @@
   	<module>spark-api</module>
   	<module>zipkin-api</module>
   	<module>product-api</module>
+  	<module>hystrix-api</module>
   </modules>
 </project>

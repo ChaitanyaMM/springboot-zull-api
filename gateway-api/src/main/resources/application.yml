@@ -8,7 +8,9 @@ endpoints:
 #    enabled: true
 #  health:
 #    sensitive: false
-  
+spring:
+  application:
+    name: gateway-api
 
 zuul:
   host:
@@ -36,6 +38,13 @@ eureka:
       
 server:
   port: 8765
+
+management:
+  endpoints:
+    web.exposure.include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
 
 logging:
   level:

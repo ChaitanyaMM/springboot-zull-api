@@ -1,19 +1,24 @@
-server:  
+server:
   port: 8761
 
+spring:
+  application:
+    name: eurekaserver-api
+  
+# by default every Eureka Server is also an Eureka Client and requires (at least one) service URL to locate a peer.
 eureka:
   instance:
-    hostname: localhost
-
+   hostname: localhost
   client:
-    registerWithEureka: false
-    fetchRegistry: false
-    healthcheck:
-        enabled:true
+    service-url:
+      defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
 
-    
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web.exposure.include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
 
 spring:
   boot:
@@ -27,17 +32,71 @@ spring:
 
 
 
-eureka:
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
-producer:
-  ribbon:
-    ServerListRefreshInterval: 5000
-ribbon:
-  IsSecure: false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#server:  
+#  port: 8761
+#
+#eureka:
+#  instance:
+#    hostname: localhost
+#    
+#    metadata-map:
+#      management.context-path: ${server.servlet.context-path:}/actuator
+#
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    healthcheck:
+#       enabled:true
+#    
+#    serviceUrl:
+#      defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
+#      
+# #     http://localhost:8761/eureka/
+#
+#spring:
+#  boot:
+#    admin:
+#      context-path: /admin
+
+
+
+
+
+
+
+
+#eureka:
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
+#producer:
+#  ribbon:
+#    ServerListRefreshInterval: 5000
+#ribbon:
+#  IsSecure: false
   
   logging:
   level:

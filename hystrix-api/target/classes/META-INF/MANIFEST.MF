@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: hystrixapi
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Eyedentify
+Implementation-Vendor-Id: com.eyedentify
+Build-Jdk: 1.8.0_172
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/hystrix-api
+Created-By: Maven Integration for Eclipse
+
