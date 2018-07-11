@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,8 +21,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Controller
 @RequestMapping(value = "/sample")
-
-//@Slf4j
+@Component
 public class SampleController {
 
 	@Autowired
@@ -43,46 +43,46 @@ public class SampleController {
 	}
 	
 	//@ApiOperation(value = "pay", response = Sample.class)
-//	@RequestMapping(value = "/insert", method = RequestMethod.POST)
-//	@ResponseBody
-//	public ResponseEntity<Map<String, Object>> Createsection(@RequestBody String data)
-//			throws IOException, ParseException {
-//		System.out.println("sample insert is calling ");
-//		Sample estimate = new Sample();
-//
-//		try {
-//			estimate = new ObjectMapper().readValue(data, Sample.class);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//		Map<String, Object> map = new HashMap<String, Object>();
-//		System.out.println("entered");
-//		// Date ts=new Date(System.currentTimeMillis());
-//		estimate.setId(UUIDs.timeBased());
-//		estimate.setActive(false);
-//		Sample fecthed = samplerepo.save(estimate);
-//		System.out.println("Checking after");
-//
-//		map.put("Data", fecthed);
-//		map.put("message", "Data! Successfully. !.");
-//		map.put("status", true);
-//		return ResponseEntity.ok().body(map);
-//	}
-//
-//	// @ApiOperation(value = "find-all", response = Sample.class)
-//	 @RequestMapping(value = "/find-all", method = RequestMethod.GET)
-//	 @ResponseBody
-//	 public ResponseEntity<Map<String, Object>> findestimatebystatus() throws
-//	 IOException {
-//	 System.out.println("find-estimates");
-//	 List<Sample> fecthed = samplerepo.findAll();
-//	 Map<String, Object> map = new HashMap<String, Object>();
-//	 map.put("Data", fecthed);
-//	 map.put("message", "Successfully Retrieved data");
-//	 map.put("status", true);
-//	 return ResponseEntity.ok().body(map);
-//	 }
-//	 
+	@RequestMapping(value = "/insert", method = RequestMethod.POST)
+	@ResponseBody
+	public ResponseEntity<Map<String, Object>> Createsection(@RequestBody String data)
+			throws IOException, ParseException {
+		System.out.println("sample insert is calling ");
+		Sample estimate = new Sample();
+
+		try {
+			estimate = new ObjectMapper().readValue(data, Sample.class);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		Map<String, Object> map = new HashMap<String, Object>();
+		System.out.println("entered");
+		// Date ts=new Date(System.currentTimeMillis());
+		estimate.setId(UUIDs.timeBased());
+		estimate.setActive(false);
+		Sample fecthed = samplerepo.save(estimate);
+		System.out.println("Checking after");
+
+		map.put("Data", fecthed);
+		map.put("message", "Data! Successfully. !.");
+		map.put("status", true);
+		return ResponseEntity.ok().body(map);
+	}
+
+	// @ApiOperation(value = "find-all", response = Sample.class)
+	 @RequestMapping(value = "/find-all", method = RequestMethod.GET)
+	 @ResponseBody
+	 public ResponseEntity<Map<String, Object>> findestimatebystatus() throws
+	 IOException {
+	 System.out.println("find-estimates");
+	 List<Sample> fecthed = samplerepo.findAll();
+	 Map<String, Object> map = new HashMap<String, Object>();
+	 map.put("Data", fecthed);
+	 map.put("message", "Successfully Retrieved data");
+	 map.put("status", true);
+	 return ResponseEntity.ok().body(map);
+	 }
+	 
 	
 	
 }
