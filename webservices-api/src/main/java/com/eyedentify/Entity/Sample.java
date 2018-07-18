@@ -28,6 +28,7 @@ public class Sample implements Serializable{
 		this.age = age;
 	}
 
+	
 	public UUID getId() {
 		return id;
 	}
@@ -63,6 +64,15 @@ public class Sample implements Serializable{
 	@Override
 	public String toString() {
 		return "Customer [id=" + id + ", name=" + name + ", age=" + age + ", active=" + active + "]";
+	}
+
+	
+
+	public Sample(String name, int age, boolean active) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.active = active;
 	}
 
 }

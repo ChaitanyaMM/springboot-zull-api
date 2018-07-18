@@ -76,6 +76,7 @@ public class SampleController {
 	 IOException {
 	 System.out.println("find-estimates");
 	 List<Sample> fecthed = samplerepo.findAll();
+	 System.out.println("size<><><>>"+fecthed.size());
 	 Map<String, Object> map = new HashMap<String, Object>();
 	 map.put("Data", fecthed);
 	 map.put("message", "Successfully Retrieved data");
